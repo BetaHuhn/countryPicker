@@ -1,5 +1,5 @@
 # Node.js Pixel art country picker
-![gif](countryPicker.gif)
+![gif](demo.gif)
 ## Live Demo
 The live demo of the country picker can be found here: https://flags.mxis.ch
 
