@@ -117,6 +117,23 @@ router.get('/api/get', async(req, res) => {
         status: 200,
         response:"success",
         data: countries
+    })  
+})
+
+router.get('/api/countries', async(req, res) => {
+    var countries = await Country.find()
+    var result = []
+    for(i in countries){
+        result.push({
+            name: countries[i].name,
+            values: countries[i].variants[0].values,
+            addedBy: countries[i].variants[0].addedBy,
+        })
+    }
+    res.json({
+        status: 200,
+        response:"success",
+        data: result
     })
         
 })
