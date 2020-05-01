@@ -1,0 +1,32 @@
+{
+  "name": "countryPicker",
+  "version": "1.0.2",
+  "description": "Pixel Country Picker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maximilian Schiller",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/BetaHuhn/countryPicker.git"
+  },
+  "homepage": "https://flags.mxis.ch",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3",
+    "helmet": "^3.21.2",
+    "md5": "^2.2.1",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^5.9.2",
+    "nanoid": "^2.1.11",
+    "request": "^2.88.2",
+    "request-ip": "^2.1.3"
+  }
+}
