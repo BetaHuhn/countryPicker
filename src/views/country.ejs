@@ -4,9 +4,9 @@
   <!--- Maximilian Schiller 2020 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%=country%> - Train the Pixel Country Picker</title>
-  <meta name="title" content="<%=country%> - Train the Pixel Country Picker">
-  <meta name="description" content="<%=country%>'s Flag. Help train a classifier for the Pixel Country Picker">
+  <title><%=country%> - Pixel Art Country selector</title>
+  <meta name="title" content="<%=country%> - Pixel Art Country selector">
+  <meta name="description" content="<%=country%>'s Flag. Pixel Art Country selector">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     <div class="app">
       <div class="description">
         <h1>Pixel Art Country selector</h1>
-        <p>I am currently training a classifier to detect what flag was drawn using <a href="https://github.com/enwash/pixel-country-picker">u/enwash's</a> pixel country picker below. In order to do this I need a lot of flags from different countries and in different variations. If you want to help, add your country's flag <a href="/add">here</a></p>
+        <p>This is a modified version of <a href="https://github.com/enwash">u/enwash's</a> <a href="https://github.com/enwash/pixel-country-picker">pixel art country picker</a>. This version tries to determine the closest matching flag by comparing each pixel to all saved flags. If your country is missing, please add it <a href="/add">here</a></p>
       </div>
       <h2><%=country%></h2>
       <% variations.forEach(function(variation) { %>
@@ -26,8 +26,9 @@
         <% if (variation.addedBy != undefined) { %><p>by <%= variation.addedBy %></p><%}%>
         <% }); %>
       <div class="form">
-        <button onclick="window.location.href='/add'">Add your own!</button>
+        <button onclick="window.location.href='/add'">Add your own</button>
         <p id="error"></p>
+        <a href="/">Or try the country selector</a>
       </div>
       <p>Created by <a href="https://github.com/BetaHuhn">BetaHuhn</a>  - Original Pixel Country Picker by <a href="https://github.com/enwash/pixel-country-picker">u/enwash</a></p>
     </div>
