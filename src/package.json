@@ -8,8 +8,8 @@
   },
   "author": "Maximilian Schiller",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/BetaHuhn/countryPicker.git"
+    "type": "git",
+    "url": "https://github.com/BetaHuhn/countryPicker.git"
   },
   "homepage": "https://flags.mxis.ch",
   "license": "MIT",
