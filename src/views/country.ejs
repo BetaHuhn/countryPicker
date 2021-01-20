@@ -24,7 +24,7 @@
             <span class="pixel" style="background-color: <%= value %>"></span>
           <% }); %>
         </div>
-        <% if (variation.addedBy != undefined) { %><p>by <%= variation.addedBy %></p><%}%>
+        <% if (variation.addedBy !== undefined && variation.addedBy.length > 0) { %><p>by <%= variation.addedBy %></p><%}%>
         <% }); %>
       <div class="form">
         <button onclick="window.location.href='/add'">Add your own</button>

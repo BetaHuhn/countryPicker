@@ -1,42 +1,37 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
-const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const compression = require('compression');
 const helmet = require('helmet');
 const { getClientIp } = require('request-ip')
 const dotenv = require('dotenv');
 dotenv.config();
-require('./database/database').connect()
+require('./database').connect()
 
 const appRouter = require('./router/app.js')
-const middleware = require("./middleware/middleware")
+const middleware = require("./middleware")
 
-const port = process.env.PORT || 3000
+app.use(middleware.log())
 
-app.listen(port, () => console.log('listening on port ' + port));
 app.use(express.static('src/public'));
 app.use(express.json({ limit: '1mb' }));
-app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(cookieParser())
+
 app.use(compression());
 app.use(helmet());
-app.use(middleware.log())
-app.use(appRouter)
-app.use(helmet.hidePoweredBy({setTo: 'Nokia 3310'}));
+app.use(cors());
+app.use(helmet.hidePoweredBy({ setTo: 'Nokia 3310' }));
 app.use((req, res, next) => {
     res.append('answer', '42');
     next();
 });
 
-var corsOptions = {
-    origin: 'https://' + process.env.DOMAIN,
-    optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions))
+app.use(appRouter)
+
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log('listening on port ' + port));
 
 process.on('unhandledRejection', (reason, p) => {
     console.log("Unhandled Rejection at: Promise ", p, " reason: ", reason);

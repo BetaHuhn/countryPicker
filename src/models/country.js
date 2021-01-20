@@ -1,8 +1,7 @@
-let mongoose = require('mongoose')
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose')
 
-let schema = new mongoose.Schema({
-    _id: Schema.Types.ObjectId,
+const schema = new mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
     name: {
         type: String,
         required: true,

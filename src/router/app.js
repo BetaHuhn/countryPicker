@@ -1,15 +1,16 @@
-const express = require('express')
-const Country = require('../models/model.js')
-let mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const rateLimit = require("express-rate-limit");
 const ejs = require('ejs')
-const countryCodes = require('../utils/countryCodes')
+const express = require('express')
 const router = express.Router()
+
+const Country = require('../models/country.js')
+const countryCodes = require('../utils/countryCodes')
 
 const limit = rateLimit({
     windowMs: 15 * 60 * 1000, 
     max: 100, 
-    handler: function(req, res, /*next*/ ) {
+    handler: function(req, res,) {
         console.log(req.ip + " has exceeded rate limit")
         res.status(429).send({
             status: 429,
@@ -32,46 +33,36 @@ router.post('/api/add', limit, async(req, res) => {
     console.log("Country: " + req.body.country + " User: " + req.body.username)
     if(countryCodes[req.body.country] != undefined){
         try {
-            var country = await Country.findOne({ name: req.body.country })
+            const country = await Country.findOne({ name: req.body.country })
             if(!country){
                 console.log("country not yet added: " + req.body.country)
-                var _id = new mongoose.Types.ObjectId();
-                var query = {
-                    _id: _id,
+                const query = {
+                    _id: new mongoose.Types.ObjectId(),
                     name: req.body.country,
                     isoCode: countryCodes[req.body.country],
                     variants:[{
                         values: req.body.values,
-                        addedBy: (req.body.username != undefined && req.body.username != null) ? req.body.username : undefined,
-                        addedAt: CurrentDate(),
+                        addedBy: req.body.username,
+                        addedAt: currentDate(),
                     }],
-                    addedAt: CurrentDate(),  
+                    addedAt: currentDate(),  
                 }
-                try {
-                    let country = new Country(query)
-                    country.save(async function(err, doc) {
-                        if (err) {
-                            console.log(err)
-                            res.json({
-                                status: '400',
-                                type: 'error'
-                            });
-                        } else {
-                            //console.log(doc)
-                            console.log("Country added as: " + doc._id)
-                            res.json({
-                                status: '200',
-                                response: "success"
-                            });
-                        }
-                    })
-                } catch (error) {
-                    console.log(error)
+                const country = new Country(query)
+                country.save(async function(err, doc) {
+                    if (err) {
+                        console.log(err)
+                        return res.json({
+                            status: '400',
+                            type: 'error'
+                        });
+                    }
+
+                    console.log("Country added as: " + doc._id)
                     res.json({
-                        status: '400',
-                        type: 'error'
+                        status: '200',
+                        response: "success"
                     });
-                }
+                })
             }else{
                 console.log(country)
                 for(i in country.variants){
@@ -83,11 +74,13 @@ router.post('/api/add', limit, async(req, res) => {
                         })
                     }
                 }
+
                 country.variants.push({
                     values: req.body.values,
                     addedBy: (req.body.username != undefined && req.body.username != null) ? req.body.username : undefined,
-                    addedAt: CurrentDate(),
+                    addedAt: currentDate(),
                 })
+
                 await country.save(function(err) {
                     if (err) {
                         console.error(err);
@@ -113,7 +106,7 @@ router.post('/api/add', limit, async(req, res) => {
 });
 
 router.get('/api/get', async(req, res) => {
-    var countries = await Country.find()
+    const countries = await Country.find()
     res.json({
         status: 200,
         response:"success",
@@ -122,8 +115,9 @@ router.get('/api/get', async(req, res) => {
 })
 
 router.get('/api/countries', async(req, res) => {
-    var countries = await Country.find()
-    var result = []
+    const countries = await Country.find()
+    const result = []
+
     for(i in countries){
         result.push({
             name: countries[i].name,
@@ -131,6 +125,7 @@ router.get('/api/countries', async(req, res) => {
             addedBy: countries[i].variants[0].addedBy,
         })
     }
+
     res.json({
         status: 200,
         response:"success",
@@ -141,16 +136,19 @@ router.get('/api/countries', async(req, res) => {
 
 router.post('/api/check', async(req, res) => {
     console.log(req.body.values)
-    var results = []
-    var countries = await Country.find()
+
+    const results = []
+    const countries = await Country.find()
     for(i in countries){
         for(a in countries[i].variants){
-            var matches = 0;
+            let matches = 0;
+
             for (v = 0; v < req.body.values.length; v++) {
                 if(req.body.values[v] == countries[i].variants[a].values[v]){
                     matches++
                 }
             }
+
             results.push({
                 country: countries[i].name,
                 variation: "id",
@@ -160,12 +158,14 @@ router.post('/api/check', async(req, res) => {
             })
         }
     }
-    var max = {matches: 0};
+
+    const max = { matches: 0 };
     for(i in results){
         if(results[i].matches > max.matches){
             max = results[i]
         }
     }
+    
     console.log("max: " + max.country + " with " + max.matches + " matches")
     res.json({
         status: 200,
@@ -182,30 +182,33 @@ router.post('/api/check', async(req, res) => {
 })
 
 router.get('/country', async(req, res) => {
-    if(req.query.iso != undefined){
-        var country = await Country.findOne({isoCode: req.query.iso})
-    }else{
-        var country = await Country.findOne({name: req.query.name})
+    let country
+    if (req.query.iso != undefined) {
+        country = await Country.findOne({isoCode: req.query.iso})
+    } else {
+        country = await Country.findOne({name: req.query.name})
     }
-    if(!country){
+
+    if (!country) {
         console.log("country not in db")
         return res.redirect("https://country.mxis.ch")
     }
+
     console.log(country.variants[0])
     const html = await ejs.renderFile('./src/views/country.ejs', { country: country.name, iso: country.isoCode, variations: country.variants })
 	return res.send(html)
 })
 
-function CurrentDate() {
-    let date_ob = new Date();
-    let date = ("0" + date_ob.getDate()).slice(-2);
-    let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
-    let year = date_ob.getFullYear();
-    let hours = date_ob.getHours();
-    let minutes = date_ob.getMinutes();
-    let seconds = date_ob.getSeconds();
-    var current_date = year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
-    return current_date;
+// Would be better to use Date.now()
+function currentDate() {
+    const dateOb = new Date();
+    const date = ("0" + dateOb.getDate()).slice(-2);
+    const month = ("0" + (dateOb.getMonth() + 1)).slice(-2);
+    const year = dateOb.getFullYear();
+    const hours = dateOb.getHours();
+    const minutes = dateOb.getMinutes();
+    const seconds = dateOb.getSeconds();
+    return year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds;
 }
 
 module.exports = router
