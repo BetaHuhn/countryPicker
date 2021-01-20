@@ -2,6 +2,7 @@ const express = require('express')
 const Country = require('../models/model.js')
 let mongoose = require('mongoose')
 const rateLimit = require("express-rate-limit");
+const ejs = require('ejs')
 const countryCodes = require('../utils/countryCodes')
 const router = express.Router()
 
@@ -191,7 +192,8 @@ router.get('/country', async(req, res) => {
         return res.redirect("https://country.mxis.ch")
     }
     console.log(country.variants[0])
-    res.render("country.ejs", {country: country.name, iso: country.isoCode, variations: country.variants})    
+    const html = await ejs.renderFile('./src/views/country.ejs', { country: country.name, iso: country.isoCode, variations: country.variants })
+	return res.send(html)
 })
 
 function CurrentDate() {
