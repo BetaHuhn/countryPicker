@@ -1,21 +1,18 @@
-let mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-const server = '127.0.0.1:27017';
-const database = process.env.DB; // REPLACE WITH MongDB DB NAME
 const options = {
-    user: process.env.DB_USERNAME,
-    pass: process.env.DB_PASSWORD,
     keepAlive: true,
     keepAliveInitialDelay: 300000,
     useNewUrlParser: true,
     useUnifiedTopology: true
 };
-var url = `mongodb://${server}/${database}?authSource=admin`
+
+const url = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/colorPicker'
 
 module.exports.connect = function() {
     mongoose.connect(url, options, )
         .then(() => {
-            console.log('Database connection successfull: ' + database)
+            console.log('Database connection successfull')
             return mongoose
         })
         .catch(err => {
