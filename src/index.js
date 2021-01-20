@@ -13,8 +13,10 @@ require('./database/database').connect()
 const appRouter = require('./router/app.js')
 const middleware = require("./middleware/middleware")
 
-app.listen(process.env.PORT, () => console.log('listening on port ' + process.env.PORT));
-app.use(express.static('public'));
+const port = process.env.PORT || 3000
+
+app.listen(port, () => console.log('listening on port ' + port));
+app.use(express.static('src/public'));
 app.use(express.json({ limit: '1mb' }));
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
