@@ -186,8 +186,14 @@ function classify() {
 	const error = document.getElementById('error')
 	error.style.color = '#000'
 	if (max.name === undefined) {
-		error.innerHTML = 'No country recognized'
+		error.innerHTML = 'Selected Country: no match found'
+		return
+	}
+
+	const score = Math.round(max.matches / 135 * 100)
+	if (score < 70) {
+		error.innerHTML = 'Selected Country: no match found'
 	} else {
-		error.innerHTML = 'Selected Country: ' + max.name + ' (Score: ' + Math.round(max.matches / 135 * 100) + '%)'
+		error.innerHTML = `Selected Country: ${ max.name } (Score: ${ score }%)`
 	}
 }
