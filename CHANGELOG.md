@@ -1,3 +1,11 @@
+## [v1.2.0] - 2021-04-16
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.0) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.1.0...v1.2.0) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.0) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.0.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.0.tar.gz))
+
+### New features
+
+- [`0db8451`](https://github.com/BetaHuhn/countryPicker/commit/0db8451)  Only show result if confidence is above 70%
+
 ## [v1.1.0] - 2021-04-16
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.1.0) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.0.0...v1.1.0) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.1.0) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.1.0.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.1.0.tar.gz))
