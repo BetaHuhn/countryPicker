@@ -14,7 +14,7 @@ const urlString = window.location.href
 const url = new URL(urlString)
 
 let code = url.searchParams.get('code')
-if (code !== undefined) {
+if (code) {
 	const colors = []
 	// eslint-disable-next-line no-undef
 	code = BigInt('0x' + code).toString(10)
@@ -110,8 +110,8 @@ function hash() {
 	let result = values.map((x) => map.indexOf(x))
 	result = result.join('')
 	// eslint-disable-next-line no-undef
-	const code = BigInt(result).toString(16)
-	const resp = 'https://flags.mxis.ch/?code=' + code
+	const newCode = BigInt(result).toString(16)
+	const resp = 'https://flags.mxis.ch/?code=' + newCode
 	const $body = document.getElementsByTagName('body')[0]
 	const $tempInput = document.createElement('INPUT')
 	$body.appendChild($tempInput)
