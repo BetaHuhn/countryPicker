@@ -7,6 +7,8 @@ const router = express.Router()
 const Country = require('../models/country.js')
 const countryCodes = require('../utils/countryCodes')
 
+const CACHE_TIME = 60 * 60 // 1 hour
+
 const limit = rateLimit({
 	windowMs: 15 * 60 * 1000,
 	max: 100,
@@ -107,6 +109,8 @@ router.post('/api/add', limit, async (req, res) => {
 
 router.get('/api/get', async (req, res) => {
 	const countries = await Country.find()
+
+	res.setHeader('Cache-Control', `max-age=15, s-max-age=${ CACHE_TIME }, stale-while-revalidate, public`)
 	res.json({
 		status: 200,
 		response: 'success',
@@ -126,6 +130,7 @@ router.get('/api/countries', async (req, res) => {
 		})
 	}
 
+	res.setHeader('Cache-Control', `max-age=15, s-max-age=${ CACHE_TIME }, stale-while-revalidate, public`)
 	res.json({
 		status: 200,
 		response: 'success',
@@ -196,6 +201,8 @@ router.get('/country', async (req, res) => {
 
 	console.log(country.variants[0])
 	const html = await ejs.renderFile('./src/views/country.ejs', { country: country.name, iso: country.isoCode, variations: country.variants })
+
+	res.setHeader('Cache-Control', `max-age=15, s-max-age=${ CACHE_TIME }, stale-while-revalidate, public`)
 	return res.send(html)
 })
 
