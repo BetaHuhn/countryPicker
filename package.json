@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@betahuhn/config": "^1.1.0",
-    "eslint": "^7.27.0",
+    "eslint": "^7.28.0",
     "nodemon": "^2.0.7"
   }
 }
