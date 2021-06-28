@@ -1,3 +1,11 @@
+## [v1.2.10] - 2021-06-28
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.10) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.9...v1.2.10) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.10) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.10.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.10.tar.gz))
+
+### Dependency updates
+
+- [`4833fb3`](https://github.com/BetaHuhn/countryPicker/commit/4833fb3)  Bump eslint from 7.28.0 to 7.29.0
+
 ## [v1.2.9] - 2021-06-21
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.9) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.8...v1.2.9) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.9) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.9.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.9.tar.gz))
