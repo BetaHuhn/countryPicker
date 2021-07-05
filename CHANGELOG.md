@@ -1,3 +1,16 @@
+## [v1.2.11] - 2021-07-05
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.11) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.10...v1.2.11) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.11) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.11.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.11.tar.gz))
+
+### Dependency updates
+
+- [`6d0a301`](https://github.com/BetaHuhn/countryPicker/commit/6d0a301)  Bump running-at from 0.3.19 to 0.3.20
+- [`5919d84`](https://github.com/BetaHuhn/countryPicker/commit/5919d84)  Bump mongoose from 5.12.14 to 5.12.15
+- [`043517a`](https://github.com/BetaHuhn/countryPicker/commit/043517a)  Bump mongoose from 5.12.15 to 5.13.0
+- [`3ff8f0f`](https://github.com/BetaHuhn/countryPicker/commit/3ff8f0f)  Bump nodemon from 2.0.7 to 2.0.8
+- [`e2e1e3a`](https://github.com/BetaHuhn/countryPicker/commit/e2e1e3a)  Bump nodemon from 2.0.8 to 2.0.9
+- [`e9a087e`](https://github.com/BetaHuhn/countryPicker/commit/e9a087e)  Bump express-rate-limit from 5.2.6 to 5.3.0
+
 ## [v1.2.10] - 2021-06-28
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.10) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.9...v1.2.10) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.10) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.10.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.10.tar.gz))
