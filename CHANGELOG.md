@@ -1,3 +1,13 @@
+## [v1.2.12] - 2021-07-12
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.12) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.11...v1.2.12) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.12) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.12.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.12.tar.gz))
+
+### Dependency updates
+
+- [`686cc67`](https://github.com/BetaHuhn/countryPicker/commit/686cc67)  Bump eslint from 7.29.0 to 7.30.0
+- [`dcdf6ec`](https://github.com/BetaHuhn/countryPicker/commit/dcdf6ec)  Bump mongoose from 5.13.0 to 5.13.2
+- [`920f96d`](https://github.com/BetaHuhn/countryPicker/commit/920f96d)  Bump nodemon from 2.0.9 to 2.0.10
+
 ## [v1.2.11] - 2021-07-05
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.11) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.10...v1.2.11) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.11) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.11.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.11.tar.gz))
