@@ -1,3 +1,12 @@
+## [v1.2.13] - 2021-07-19
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.13) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.12...v1.2.13) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.13) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.13.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.13.tar.gz))
+
+### Dependency updates
+
+- [`ad0d46d`](https://github.com/BetaHuhn/countryPicker/commit/ad0d46d)  Bump nodemon from 2.0.10 to 2.0.12
+- [`696d848`](https://github.com/BetaHuhn/countryPicker/commit/696d848)  Bump running-at from 0.3.20 to 0.3.21
+
 ## [v1.2.12] - 2021-07-12
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.12) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.11...v1.2.12) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.12) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.12.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.12.tar.gz))
