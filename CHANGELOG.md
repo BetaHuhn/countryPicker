@@ -1,3 +1,12 @@
+## [v1.2.15] - 2021-08-02
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.15) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.14...v1.2.15) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.15) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.15.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.15.tar.gz))
+
+### Dependency updates
+
+- [`5bfba04`](https://github.com/BetaHuhn/countryPicker/commit/5bfba04)  Bump running-at from 0.3.21 to 0.3.22
+- [`6da5647`](https://github.com/BetaHuhn/countryPicker/commit/6da5647)  Bump mongoose from 5.13.3 to 5.13.4
+
 ## [v1.2.14] - 2021-07-26
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.14) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.13...v1.2.14) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.14) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.14.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.14.tar.gz))
