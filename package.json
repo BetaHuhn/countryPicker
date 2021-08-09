@@ -1,6 +1,6 @@
 {
   "name": "countryPicker",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "Pixel Country Picker",
   "main": "src/index.js",
   "scripts": {
