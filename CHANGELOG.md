@@ -1,3 +1,13 @@
+## [v1.2.17] - 2021-08-16
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.17) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.16...v1.2.17) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.17) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.17.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.17.tar.gz))
+
+### Dependency updates
+
+- [`bd765e6`](https://github.com/BetaHuhn/countryPicker/commit/bd765e6)  Bump mongoose from 5.13.5 to 5.13.6
+- [`59aa9f8`](https://github.com/BetaHuhn/countryPicker/commit/59aa9f8)  Bump mongoose from 5.13.6 to 5.13.7
+- [`a691235`](https://github.com/BetaHuhn/countryPicker/commit/a691235)  Bump path-parse from 1.0.6 to 1.0.7
+
 ## [v1.2.16] - 2021-08-09
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.16) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.15...v1.2.16) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.16) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.16.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.16.tar.gz))
