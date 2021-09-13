@@ -1,3 +1,11 @@
+## [v1.2.19] - 2021-09-13
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.19) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.18...v1.2.19) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.19) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.19.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.19.tar.gz))
+
+### Dependency updates
+
+- [`ee1a5b9`](https://github.com/BetaHuhn/countryPicker/commit/ee1a5b9)  Bump @betahuhn/config from 1.1.0 to 1.2.0
+
 ## [v1.2.18] - 2021-08-30
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.18) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.17...v1.2.18) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.18) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.18.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.18.tar.gz))
