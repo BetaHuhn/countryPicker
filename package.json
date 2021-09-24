@@ -31,6 +31,6 @@
   "devDependencies": {
     "@betahuhn/config": "^1.2.0",
     "eslint": "^7.32.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.13"
   }
 }
