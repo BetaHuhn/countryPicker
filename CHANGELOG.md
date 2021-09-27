@@ -1,3 +1,12 @@
+## [v1.2.20] - 2021-09-27
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.20) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.19...v1.2.20) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.20) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.20.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.20.tar.gz))
+
+### Dependency updates
+
+- [`24cbc23`](https://github.com/BetaHuhn/countryPicker/commit/24cbc23)  Bump semver-regex from 3.1.2 to 3.1.3
+- [`65823aa`](https://github.com/BetaHuhn/countryPicker/commit/65823aa)  Bump nodemon from 2.0.12 to 2.0.13
+
 ## [v1.2.19] - 2021-09-13
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.19) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.18...v1.2.19) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.19) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.19.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.19.tar.gz))
