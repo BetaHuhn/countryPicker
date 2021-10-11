@@ -1,3 +1,12 @@
+## [v1.2.21] - 2021-10-11
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.21) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.20...v1.2.21) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.21) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.21.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.21.tar.gz))
+
+### Dependency updates
+
+- [`3135205`](https://github.com/BetaHuhn/countryPicker/commit/3135205)  Bump express-rate-limit from 5.3.0 to 5.4.0
+- [`4d5d931`](https://github.com/BetaHuhn/countryPicker/commit/4d5d931)  Bump express-rate-limit from 5.4.0 to 5.4.1
+
 ## [v1.2.20] - 2021-09-27
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.20) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.19...v1.2.20) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.20) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.20.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.20.tar.gz))
