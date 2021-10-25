@@ -1,3 +1,11 @@
+## [v1.2.23] - 2021-10-25
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.23) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.22...v1.2.23) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.23) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.23.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.23.tar.gz))
+
+### Dependency updates
+
+- [`ee80767`](https://github.com/BetaHuhn/countryPicker/commit/ee80767)  Bump nodemon from 2.0.13 to 2.0.14
+
 ## [v1.2.22] - 2021-10-18
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.22) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.21...v1.2.22) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.22) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.22.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.22.tar.gz))
