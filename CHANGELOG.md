@@ -1,3 +1,12 @@
+## [v1.2.24] - 2021-11-15
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.24) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.23...v1.2.24) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.24) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.24.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.24.tar.gz))
+
+### Dependency updates
+
+- [`e5e7b48`](https://github.com/BetaHuhn/countryPicker/commit/e5e7b48)  Bump express-rate-limit from 5.5.0 to 5.5.1
+- [`13327db`](https://github.com/BetaHuhn/countryPicker/commit/13327db)  Bump nodemon from 2.0.14 to 2.0.15
+
 ## [v1.2.23] - 2021-10-25
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.23) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.22...v1.2.23) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.23) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.23.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.23.tar.gz))
