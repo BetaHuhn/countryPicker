@@ -1,3 +1,11 @@
+## [v1.2.25] - 2021-12-20
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.25) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.24...v1.2.25) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.25) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.25.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.25.tar.gz))
+
+### Dependency updates
+
+- [`ffb9386`](https://github.com/BetaHuhn/countryPicker/commit/ffb9386)  Bump express from 4.17.1 to 4.17.2
+
 ## [v1.2.24] - 2021-11-15
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.24) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.23...v1.2.24) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.24) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.24.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.24.tar.gz))
