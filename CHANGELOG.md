@@ -1,3 +1,13 @@
+## [v1.2.26] - 2022-04-04
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.26) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.25...v1.2.26) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.26) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.26.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.26.tar.gz))
+
+### Dependency updates
+
+- [`a73fb2f`](https://github.com/BetaHuhn/countryPicker/commit/a73fb2f)  Bump minimist from 1.2.5 to 1.2.6
+- [`5ecca73`](https://github.com/BetaHuhn/countryPicker/commit/5ecca73)  Bump trim-off-newlines from 1.0.1 to 1.0.3
+- [`c91d12e`](https://github.com/BetaHuhn/countryPicker/commit/c91d12e)  Bump node-fetch from 2.6.2 to 2.6.7
+
 ## [v1.2.25] - 2021-12-20
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.25) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.24...v1.2.25) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.25) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.25.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.25.tar.gz))
