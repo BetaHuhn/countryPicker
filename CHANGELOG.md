@@ -1,3 +1,11 @@
+## [v1.2.28] - 2022-05-19
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.28) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.27...v1.2.28) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.28) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.28.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.28.tar.gz))
+
+### Bug fixes
+
+- [`fe2cfc9`](https://github.com/BetaHuhn/countryPicker/commit/fe2cfc9)  Decrease cash time
+
 ## [v1.2.27] - 2022-05-19
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.27) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.26...v1.2.27) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.27) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.27.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.27.tar.gz))
