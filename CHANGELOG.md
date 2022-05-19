@@ -1,3 +1,15 @@
+## [v1.2.27] - 2022-05-19
+
+[Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.27) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.26...v1.2.27) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.27) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.27.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.27.tar.gz))
+
+### Bug fixes
+
+- [`a91fdd7`](https://github.com/BetaHuhn/countryPicker/commit/a91fdd7)  Use correct path to main.js
+
+### Dependency updates
+
+- [`663f5a0`](https://github.com/BetaHuhn/countryPicker/commit/663f5a0)  Bump ejs from 3.1.6 to 3.1.7
+
 ## [v1.2.26] - 2022-04-04
 
 [Release notes](https://github.com/BetaHuhn/countryPicker/releases/tag/v1.2.26) · [Compare](https://github.com/BetaHuhn/countryPicker/compare/v1.2.25...v1.2.26) · [Tag](https://github.com/BetaHuhn/countryPicker/tree/v1.2.26) · Archive ([zip](https://github.com/BetaHuhn/countryPicker/archive/v1.2.26.zip) · [tar.gz](https://github.com/BetaHuhn/countryPicker/archive/v1.2.26.tar.gz))
