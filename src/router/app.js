@@ -7,7 +7,7 @@ const router = express.Router()
 const Country = require('../models/country.js')
 const countryCodes = require('../utils/countryCodes')
 
-const CACHE_TIME = 60 * 60 // 1 hour
+const CACHE_TIME = 60 // 1 minute
 
 const limit = rateLimit({
 	windowMs: 15 * 60 * 1000,
